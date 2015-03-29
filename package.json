@@ -1,0 +1,11 @@
+{
+  "name": "GULP_DEMO",
+  "version": "1.0.0",
+  "description": "This is for IT internal demo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Nagaraja",
+}
