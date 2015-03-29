@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     minifyHTML = require('gulp-minify-html'),
     jsonminify = require('gulp-jsonminify'),
     imagemin = require('gulp-imagemin'),
-    pngcrush = require('imagemin-pngcrush'),
+    pngcrush = require('imagemin-pngquant'),
     concat = require('gulp-concat');
 
 var env,
@@ -87,7 +87,7 @@ gulp.task('images', function() {
       svgoPlugins: [{ removeViewBox: false }],
       use: [pngcrush()]
     })))
-    .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
+    .pipe(gulp.dest(outputDir + 'images'))
     .pipe(connect.reload())
 });
 
