@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/nmarkapuram/Gulp-Demo.git"
   },
   "author": "Nagaraja",
   "devDependencies": {
